@@ -1,32 +1,25 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import storeOwnerStore from "../stores/storeOwnerStore";
-import type { storeOwner } from "../types/storeOwner";
-import { observer } from "../../node_modules/mobx-react-lite"
+import { observer } from "mobx-react-lite";
+
 const StoreOwner =
     observer(
     () => {
-        const [storeOwners,setStoreOwners]=useState<storeOwner[]>([])
-        useEffect(() => {
-            const fetchStoreOwners = async () => {
 
-                try {
-                    await storeOwnerStore.GetAllStoreOwners()
-                } catch (error: any) {
-                    console.error("Error fetching storeOwners:", error.response ? error.response.data : error.message);
-                }
-            };
-            fetchStoreOwners();
-            setStoreOwners(storeOwnerStore.storeOwners);
-        }) 
-
-
+    useEffect(() => {
+        storeOwnerStore.GetAllStoreOwners();
+    }, []);
         return (
             <div>
                 <h2>Store Owner</h2>
-                {storeOwners.map(storeOwner => (
+                {storeOwnerStore.storeOwners.map(storeOwner => (
                     <>
+                      <div key={storeOwner.id}>
                         <h3>{storeOwner.name}</h3>
                         <div>{storeOwner.address}</div>
+                        <div>{storeOwner.email}</div>
+                        <div>{storeOwner.phone}</div>
+                        </div>
                     </>
                 )
                 )}
