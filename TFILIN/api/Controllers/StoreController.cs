@@ -18,13 +18,16 @@ namespace api.Controllers
     {
         private readonly IStoreService _storeService;
         private readonly ICityService _cityService;
+        private readonly IRegionService _regionService;
+
 
         private readonly IMapper _mapper;
 
-        public StoreController(IStoreService storeService, IMapper mapper,ICityService cityService)
+        public StoreController(IStoreService storeService, IMapper mapper,ICityService cityService, IRegionService regionService)
         {
             _storeService = storeService;
             _cityService = cityService;
+            _regionService = regionService;
             _mapper = mapper;
         }
         [Authorize]
@@ -39,15 +42,15 @@ namespace api.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             City city =await _cityService.GetCityByIdAsync(newStore.CityId);
-            Region region=await _
+            Region region=await _regionService.GetRegionByIdAsync(newStore.RegionId);
             Store store = new Store()
             {
                 StoreOwnerId = newStore.StoreOwnerId,
                 StoreName = newStore.StoreName,
                 Phone = newStore.Phone,
                 Address = newStore.Address,
-                //City = newStore.City.CityName,
-                //Region = newStore.Region.Name,
+                City = city,
+                Region = region,
                 Latitude = newStore.Latitude,
                 Longitude = newStore.Longitude,
                 MoreDetails = newStore.MoreDetails,
