@@ -176,3 +176,4 @@ C:\Users\9090\Desktop\תפילין\TFILIN\api\bin\Debug\net9.0\BCrypt.Net-Core.d
 C:\Users\9090\Desktop\תפילין\TFILIN\api\bin\Debug\net9.0\service.dll
 C:\Users\9090\Desktop\תפילין\TFILIN\api\bin\Debug\net9.0\service.pdb
 C:\Users\9090\Desktop\תפילין\TFILIN\api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\9090\Desktop\תפילין\TFILIN\api\obj\Debug\net9.0\api.sourcelink.json

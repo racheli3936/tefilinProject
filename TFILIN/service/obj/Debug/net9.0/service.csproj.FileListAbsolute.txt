@@ -13,3 +13,4 @@ C:\Users\9090\Desktop\תפילין\TFILIN\service\bin\Debug\net9.0\core.dll
 C:\Users\9090\Desktop\תפילין\TFILIN\service\bin\Debug\net9.0\core.pdb
 C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\service.csproj.AssemblyReference.cache
 C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\service.csproj.Up2Date
+C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\service.sourcelink.json

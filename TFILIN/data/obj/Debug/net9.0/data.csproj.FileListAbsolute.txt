@@ -15,3 +15,4 @@ C:\Users\9090\Desktop\תפילין\TFILIN\data\obj\Debug\net9.0\refint\data.dll
 C:\Users\9090\Desktop\תפילין\TFILIN\data\obj\Debug\net9.0\data.pdb
 C:\Users\9090\Desktop\תפילין\TFILIN\data\obj\Debug\net9.0\data.genruntimeconfig.cache
 C:\Users\9090\Desktop\תפילין\TFILIN\data\obj\Debug\net9.0\ref\data.dll
+C:\Users\9090\Desktop\תפילין\TFILIN\data\obj\Debug\net9.0\data.sourcelink.json

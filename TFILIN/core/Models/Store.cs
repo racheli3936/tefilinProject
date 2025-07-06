@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,10 @@ namespace core.Models
         public string Address { get; set; }
         public City City { get; set; }
         public Region Region { get; set; }
+        [Column(TypeName = "decimal(9,6)")]
+        public double Latitude { get; set; }//קו רוחב
+        [Column(TypeName = "decimal(9,6)")]
+        public double Longitude { get; set; }//קו אורך
         public string MoreDetails { get; set; }
         public string StandPlace { get; set; }
         public bool Status { get; set; }

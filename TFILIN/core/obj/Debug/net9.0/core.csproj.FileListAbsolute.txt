@@ -10,3 +10,4 @@ C:\Users\9090\Desktop\תפילין\TFILIN\core\obj\Debug\net9.0\refint\core.dll
 C:\Users\9090\Desktop\תפילין\TFILIN\core\obj\Debug\net9.0\core.pdb
 C:\Users\9090\Desktop\תפילין\TFILIN\core\obj\Debug\net9.0\ref\core.dll
 C:\Users\9090\Desktop\תפילין\TFILIN\core\obj\Debug\net9.0\core.csproj.AssemblyReference.cache
+C:\Users\9090\Desktop\תפילין\TFILIN\core\obj\Debug\net9.0\core.sourcelink.json
