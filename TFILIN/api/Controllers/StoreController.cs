@@ -23,13 +23,24 @@ namespace api.Controllers
 
         private readonly IMapper _mapper;
 
-        public StoreController(IStoreService storeService, IMapper mapper,ICityService cityService, IRegionService regionService)
+        public StoreController(IStoreService storeService, IMapper mapper, ICityService cityService, IRegionService regionService)
         {
             _storeService = storeService;
             _cityService = cityService;
             _regionService = regionService;
             _mapper = mapper;
         }
+        [HttpGet("owner/{ownerId}")]
+        public async Task<ActionResult<List<Store>>> GetStoresByOwnerId(int ownerId)
+        {
+            var stores = await _storeService.GetStoresByOwnerIdAsync(ownerId);
+
+            if (stores == null || stores.Count == 0)
+                return NotFound($"לא נמצאו חנויות לבעל מספר מזהה {ownerId}");
+
+            return Ok(stores);
+        }
+
         [Authorize]
         [HttpPost]
         public async Task<ActionResult<Store>> AddStore([FromBody] StorePostModel newStore)
@@ -41,8 +52,8 @@ namespace api.Controllers
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            City city =await _cityService.GetCityByIdAsync(newStore.CityId);
-            Region region=await _regionService.GetRegionByIdAsync(newStore.RegionId);
+            City city = await _cityService.GetCityByIdAsync(newStore.CityId);
+            Region region = await _regionService.GetRegionByIdAsync(newStore.RegionId);
             Store store = new Store()
             {
                 StoreOwnerId = newStore.StoreOwnerId,
@@ -69,7 +80,5 @@ namespace api.Controllers
 
             return Ok(store);
         }
-
-
     }
 }

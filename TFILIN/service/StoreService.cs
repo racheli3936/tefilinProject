@@ -18,6 +18,11 @@ namespace service
         {
             _storeRepository = storeRepository;
         }
+        public async Task<List<Store>> GetStoresByOwnerIdAsync(int ownerId)
+        {
+            return await _storeRepository.GetStoresByOwnerIdAsync(ownerId);
+        }
+
         public async Task<Store> AddStoreAsync(Store newStore)
         {
 

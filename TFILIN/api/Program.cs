@@ -64,6 +64,13 @@ builder.Services.AddScoped<ICityRepository,CityRepository>();
 builder.Services.AddScoped<IStoreOwnerService,StoreOwnerService>();
 builder.Services.AddScoped<IStoreOwnerRepository, StoreOwnerRepository>();
 
+builder.Services.AddScoped<IStoreService, StoreService>();
+builder.Services.AddScoped<IStoreRepository, StoreRepository>();
+
+
+builder.Services.AddScoped<IRegionService, RegionService>();
+builder.Services.AddScoped<IRegionRepository, RegionRepository>();
+
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddAuthentication(options =>
 {

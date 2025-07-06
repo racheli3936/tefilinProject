@@ -10,5 +10,6 @@ namespace core.IServices
     public interface IStoreService
     {
         Task<Store> AddStoreAsync(Store newStore);
+        Task<List<Store>> GetStoresByOwnerIdAsync(int ownerId);
     }
 }

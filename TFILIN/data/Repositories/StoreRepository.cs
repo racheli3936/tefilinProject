@@ -16,6 +16,12 @@ namespace data.Repositories
         {
             _context = context;
         }
+        public async Task<List<Store>> GetStoresByOwnerIdAsync(int ownerId)
+        {
+            return await _context.Stores
+                .Where(s => s.StoreOwnerId == ownerId)
+                .ToListAsync();
+        }
         public async Task<Store> AddStoreAsync(Store store)
         {
             await _context.Stores.AddAsync(store);

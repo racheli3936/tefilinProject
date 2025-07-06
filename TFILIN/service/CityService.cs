@@ -29,7 +29,7 @@ namespace service
         }
         public async Task<City> GetCityByIdAsync(int cityId)
         {
-            City city = await _cityRepository.GetCityById(cityId);
+            City city = await _cityRepository.GetCityByIdAsync(cityId);
           
             return city;
         }

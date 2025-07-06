@@ -9,6 +9,7 @@ namespace core.IRepositories
 {
     public interface IStoreRepository
     {
+        Task<List<Store>> GetStoresByOwnerIdAsync(int ownerId);
         Task<Store> AddStoreAsync(Store store);
     }
 }
