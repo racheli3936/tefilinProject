@@ -10,6 +10,7 @@ namespace core.IRepositories
     public interface ICityRepository
     {
         Task<List<City>> GetAllCitiesAsync();
+        Task<City> GetCityByIdAsync(int cityId);
         Task AddNewCityAsync(City city);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using core.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace core.IRepositories
 {
-    class IStoreRepository
+    public interface IStoreRepository
     {
+        Task<Store> AddStoreAsync(Store store);
     }
 }

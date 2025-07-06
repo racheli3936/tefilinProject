@@ -27,6 +27,12 @@ namespace service
             List<CityDto> citiesDto = _mapper.Map<List<CityDto>>(cities);
             return citiesDto;
         }
+        public async Task<City> GetCityByIdAsync(int cityId)
+        {
+            City city = await _cityRepository.GetCityById(cityId);
+          
+            return city;
+        }
         public async Task<City> AddNewCityAsync(City city)
         {
              await _cityRepository.AddNewCityAsync(city);

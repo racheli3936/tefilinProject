@@ -11,6 +11,7 @@ namespace core.IServices
     public interface ICityService
     {
         Task<List<CityDto>> GetAllCitiesAsync();
+        Task<City> GetCityByIdAsync(int cityId);
         Task<City> AddNewCityAsync(City city);
     }
 }

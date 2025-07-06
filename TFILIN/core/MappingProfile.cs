@@ -19,6 +19,7 @@ namespace core
             CreateMap<Region, RegionDto>().ReverseMap();
             CreateMap<City, CityDto>().ReverseMap();
             CreateMap<StoreOwner, StoreOwnerDto>().ReverseMap();
+           
         }
     }
 }

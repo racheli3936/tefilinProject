@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Migrations\\20250706083045_changeToDecimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\Migrations\\20250706083045_changeToDecimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\models\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\models\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -86,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,7 +98,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "20250706083045_changeToDecimal.cs",
+              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Migrations\\20250706083045_changeToDecimal.cs",
+              "RelativeDocumentMoniker": "data\\Migrations\\20250706083045_changeToDecimal.cs",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Migrations\\20250706083045_changeToDecimal.cs",
+              "RelativeToolTip": "data\\Migrations\\20250706083045_changeToDecimal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T08:30:46.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "20250706082747_addLatitudeLongitude.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Migrations\\20250706082747_addLatitudeLongitude.cs",
               "RelativeDocumentMoniker": "data\\Migrations\\20250706082747_addLatitudeLongitude.cs",
@@ -107,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StoreStand.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\StoreStand.cs",
               "RelativeDocumentMoniker": "core\\Models\\StoreStand.cs",
@@ -120,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Region.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\Region.cs",
               "RelativeDocumentMoniker": "core\\Models\\Region.cs",
@@ -133,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Dedication.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\Dedication.cs",
               "RelativeDocumentMoniker": "core\\Models\\Dedication.cs",
@@ -146,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "StandController.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\StandController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\StandController.cs",
@@ -159,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DonationController.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\DonationController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\DonationController.cs",
@@ -172,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "StorePostModel.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\PostModels\\StorePostModel.cs",
               "RelativeDocumentMoniker": "api\\PostModels\\StorePostModel.cs",
@@ -185,12 +202,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Store.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\Store.cs",
               "RelativeDocumentMoniker": "core\\Models\\Store.cs",
-              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\Store.cs*",
-              "RelativeToolTip": "core\\Models\\Store.cs*",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\Store.cs",
+              "RelativeToolTip": "core\\Models\\Store.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAA5wBYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T08:17:48.279Z",
@@ -198,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "StoreController.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\StoreController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\StoreController.cs",
@@ -211,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IStoreOwnerService.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\IServices\\IStoreOwnerService.cs",
               "RelativeDocumentMoniker": "core\\IServices\\IStoreOwnerService.cs",
@@ -223,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\MappingProfile.cs",
               "RelativeDocumentMoniker": "core\\MappingProfile.cs",
@@ -235,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "StoreOwnerDto.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\StoreOwnerDto.cs",
               "RelativeDocumentMoniker": "core\\DTOs\\StoreOwnerDto.cs",
@@ -247,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "StoreOwner.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\StoreOwner.cs",
               "RelativeDocumentMoniker": "core\\Models\\StoreOwner.cs",
@@ -260,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "StoreOwnerService.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\service\\StoreOwnerService.cs",
               "RelativeDocumentMoniker": "service\\StoreOwnerService.cs",
@@ -272,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "IStoreOwnerRepository.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\IRepositories\\IStoreOwnerRepository.cs",
               "RelativeDocumentMoniker": "core\\IRepositories\\IStoreOwnerRepository.cs",
@@ -284,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "StoreOwnerRepository.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Repositories\\StoreOwnerRepository.cs",
               "RelativeDocumentMoniker": "data\\Repositories\\StoreOwnerRepository.cs",
@@ -296,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "CityController.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\CityController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\CityController.cs",
@@ -309,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "StoreOwnerController.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\StoreOwnerController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\StoreOwnerController.cs",
@@ -322,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "DonorRepository.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Repositories\\DonorRepository.cs",
               "RelativeDocumentMoniker": "data\\Repositories\\DonorRepository.cs",

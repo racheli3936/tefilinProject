@@ -20,6 +20,11 @@ namespace data.Repositories
         {
             return await _context.Cities.ToListAsync();
         }
+        public async Task<City> GetCityByIdAsync(int cityId)
+        {
+            return await _context.Cities.FindAsync(cityId);
+        }
+
         public async Task AddNewCityAsync(City city)
         {
             await _context.Cities.AddAsync(city);

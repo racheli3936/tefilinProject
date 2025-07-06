@@ -21,10 +21,16 @@ namespace api.Controllers
             _cityService = cityService;
         }
         [HttpGet]
-        public async Task<ActionResult<List<CityDto>>> GetAllDonors()
+        public async Task<ActionResult<List<CityDto>>> GetAllCities()
         {
             List<CityDto> cities = await _cityService.GetAllCitiesAsync();
             return Ok(cities);
+        }
+        [HttpGet]
+        public async Task<ActionResult<City>> GetCityById(int cityId)
+        {
+            City city = await _cityService.GetCityByIdAsync(cityId);
+            return Ok(city);
         }
         [Authorize]
         [HttpPost]
