@@ -1,0 +1,15 @@
+C:\Users\9090\Desktop\תפילין\TFILIN\service\bin\Debug\net9.0\service.deps.json
+C:\Users\9090\Desktop\תפילין\TFILIN\service\bin\Debug\net9.0\service.dll
+C:\Users\9090\Desktop\תפילין\TFILIN\service\bin\Debug\net9.0\service.pdb
+C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\service.AssemblyInfoInputs.cache
+C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\service.AssemblyInfo.cs
+C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\service.csproj.CoreCompileInputs.cache
+C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\service.dll
+C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\refint\service.dll
+C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\service.pdb
+C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\ref\service.dll
+C:\Users\9090\Desktop\תפילין\TFILIN\service\bin\Debug\net9.0\core.dll
+C:\Users\9090\Desktop\תפילין\TFILIN\service\bin\Debug\net9.0\core.pdb
+C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\service.csproj.AssemblyReference.cache
+C:\Users\9090\Desktop\תפילין\TFILIN\service\obj\Debug\net9.0\service.csproj.Up2Date
