@@ -19,6 +19,7 @@ namespace data
         public DbSet<Donation> Donations { get; set; }
         public DbSet<Donor> Donors { get; set; }
         public DbSet<DonorsConversation> DonorsConversations { get; set; }
+        public DbSet<StoreOwnerConversation> StoreOwnerConversations { get; set; }
 
         public DbSet<Item> Items { get; set; }
         public DbSet<MonthlyDonation> MonthlyDonations { get; set; }
@@ -34,6 +35,7 @@ namespace data
         public DbSet<ToDoVisit> ToDoStand { get; set; }
         public DbSet<User> Users { get; set; }  
         public DbSet<Visit> Visits { get; set; }
+        public DbSet<ToDo> Todo { get; set; }
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
     }
 }

@@ -18,7 +18,7 @@ namespace data.Repositories
         }
         public async Task<List<Store>> GetStoresByOwnerIdAsync(int ownerId)
         {
-            return await _context.Stores
+            return await _context.Stores.Include(s=>s.StoreStand)
                 .Where(s => s.StoreOwnerId == ownerId)
                 .ToListAsync();
         }

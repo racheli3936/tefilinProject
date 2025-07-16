@@ -661,6 +661,58 @@ namespace data.Migrations
                     b.ToTable("StoreOwners");
                 });
 
+            modelBuilder.Entity("core.Models.StoreOwnerConversation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("ConversionDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Notes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StatusCallId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StoreOwnerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StoreStandId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UpdatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StatusCallId");
+
+                    b.HasIndex("StoreOwnerId");
+
+                    b.ToTable("StoreOwnerConversations");
+                });
+
             modelBuilder.Entity("core.Models.StoreStand", b =>
                 {
                     b.Property<int>("Id")
@@ -744,6 +796,35 @@ namespace data.Migrations
                     b.ToTable("TefilinStatuses");
                 });
 
+            modelBuilder.Entity("core.Models.ToDo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ToDoName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UpdatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Todo");
+                });
+
             modelBuilder.Entity("core.Models.ToDoVisit", b =>
                 {
                     b.Property<int>("Id")
@@ -770,6 +851,9 @@ namespace data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("StoreOwnerConversationId")
+                        .HasColumnType("int");
+
                     b.Property<int>("ToDoId")
                         .HasColumnType("int");
 
@@ -783,6 +867,8 @@ namespace data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("StoreOwnerConversationId");
 
                     b.HasIndex("VisitId");
 
@@ -1034,6 +1120,23 @@ namespace data.Migrations
                     b.Navigation("Region");
                 });
 
+            modelBuilder.Entity("core.Models.StoreOwnerConversation", b =>
+                {
+                    b.HasOne("core.Models.StatusCall", "StatusCall")
+                        .WithMany()
+                        .HasForeignKey("StatusCallId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("core.Models.StoreOwner", null)
+                        .WithMany("StoreOwnerConversations")
+                        .HasForeignKey("StoreOwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("StatusCall");
+                });
+
             modelBuilder.Entity("core.Models.StoreStand", b =>
                 {
                     b.HasOne("core.Models.Stand", null)
@@ -1051,6 +1154,12 @@ namespace data.Migrations
 
             modelBuilder.Entity("core.Models.ToDoVisit", b =>
                 {
+                    b.HasOne("core.Models.StoreOwnerConversation", null)
+                        .WithMany("ToDoVisits")
+                        .HasForeignKey("StoreOwnerConversationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("core.Models.Visit", null)
                         .WithMany("ToDo")
                         .HasForeignKey("VisitId")
@@ -1102,7 +1211,14 @@ namespace data.Migrations
 
             modelBuilder.Entity("core.Models.StoreOwner", b =>
                 {
+                    b.Navigation("StoreOwnerConversations");
+
                     b.Navigation("Stores");
+                });
+
+            modelBuilder.Entity("core.Models.StoreOwnerConversation", b =>
+                {
+                    b.Navigation("ToDoVisits");
                 });
 
             modelBuilder.Entity("core.Models.Visit", b =>

@@ -71,6 +71,27 @@ builder.Services.AddScoped<IStoreRepository, StoreRepository>();
 builder.Services.AddScoped<IRegionService, RegionService>();
 builder.Services.AddScoped<IRegionRepository, RegionRepository>();
 
+builder.Services.AddScoped<IStoreOwnerConversationService, StoreOwnerConversationService>();
+builder.Services.AddScoped<IStoreOwnerConversationRepository, StoreOwnerConversationRepository>();
+
+builder.Services.AddScoped<IToDoVisitService, ToDoVisitService>();
+builder.Services.AddScoped<IToDoVisitRepository, ToDoVisitRepository>();
+
+builder.Services.AddScoped<IStatusCallService, StatusCallService>();
+builder.Services.AddScoped<IStatusCallRepository, StatusCallRepository>();
+
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+builder.Services.AddScoped<IStandService,StandService>();
+builder.Services.AddScoped<IStandRepository,StandRepository>();
+
+builder.Services.AddScoped<ITefilinStatusService, TefilinStatusService>();
+builder.Services.AddScoped<ITefilinStatusRepository, TefilinStatusRepository>();
+
+builder.Services.AddScoped<IToDoService, ToDoService>();
+builder.Services.AddScoped<IToDoRepository,ToDoRepository>();
+
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddAuthentication(options =>
 {

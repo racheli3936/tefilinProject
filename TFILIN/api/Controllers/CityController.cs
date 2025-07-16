@@ -26,7 +26,7 @@ namespace api.Controllers
             List<CityDto> cities = await _cityService.GetAllCitiesAsync();
             return Ok(cities);
         }
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<ActionResult<City>> GetCityById(int cityId)
         {
             City city = await _cityService.GetCityByIdAsync(cityId);

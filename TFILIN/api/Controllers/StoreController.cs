@@ -1,5 +1,6 @@
 ﻿using api.PostModels;
 using AutoMapper;
+using core.DTOs;
 using core.IServices;
 using core.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -31,9 +32,9 @@ namespace api.Controllers
             _mapper = mapper;
         }
         [HttpGet("owner/{ownerId}")]
-        public async Task<ActionResult<List<Store>>> GetStoresByOwnerId(int ownerId)
+        public async Task<ActionResult<List<StoreDto>>> GetStoresByOwnerId(int ownerId)
         {
-            var stores = await _storeService.GetStoresByOwnerIdAsync(ownerId);
+            List<StoreDto> stores = await _storeService.GetStoresByOwnerIdAsync(ownerId);
 
             if (stores == null || stores.Count == 0)
                 return NotFound($"לא נמצאו חנויות לבעל מספר מזהה {ownerId}");

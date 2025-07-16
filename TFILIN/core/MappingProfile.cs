@@ -19,7 +19,13 @@ namespace core
             CreateMap<Region, RegionDto>().ReverseMap();
             CreateMap<City, CityDto>().ReverseMap();
             CreateMap<StoreOwner, StoreOwnerDto>().ReverseMap();
-           
+            CreateMap<Store, StoreDto>().ReverseMap();  
+            CreateMap<StoreStand, StoreStandDto>().ReverseMap();
+            CreateMap<StatusCall, StatusCallDto>().ReverseMap();
+            CreateMap<StoreOwnerConversation, StoreOwnerConversationDto>().ReverseMap();
+            CreateMap<ToDoVisit, ToDoVisitDto>().ReverseMap();
+            CreateMap<ToDo, ToDoDto>().ReverseMap();
+
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using core.Models;
+﻿using core.DTOs;
+using core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,6 @@ namespace core.IServices
     public interface IStoreService
     {
         Task<Store> AddStoreAsync(Store newStore);
-        Task<List<Store>> GetStoresByOwnerIdAsync(int ownerId);
+        Task<List<StoreDto>> GetStoresByOwnerIdAsync(int ownerId);
     }
 }
