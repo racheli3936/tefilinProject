@@ -40,7 +40,7 @@ namespace api.Controllers
                 StoreOwnerId = model.StoreOwnerId,
                 StoreStandId = model.StoreStandId,
                 UserId = model.UserId,
-                ConversionDate = model.ConversionDate,
+                ConversationDate = model.ConversationDate,
                 StatusCall = statusCall,
                 Notes = model.notes,
                 ToDoVisits = new List<ToDoVisit>(),

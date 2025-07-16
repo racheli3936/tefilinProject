@@ -34,13 +34,13 @@ namespace data.Repositories
         public async Task<StoreOwnerConversation?> GetConversationByIdAsync(int id)
         {
             return await _context.StoreOwnerConversations
-                .Include(c => c.ToDoVisits)
+                .Include(c => c.ToDoVisits).Include(c=>c.StatusCall)
                 .FirstOrDefaultAsync(c => c.Id == id);
         }
         public async Task<List<StoreOwnerConversation>> GetConversationsByStoreOwnerIdAsync(int storeOwnerId)
         {
             return await _context.StoreOwnerConversations
-                .Include(c => c.ToDoVisits)
+                .Include(c => c.ToDoVisits).Include(c=>c.StatusCall)
                 .Where(c => c.StoreOwnerId == storeOwnerId)
                 .ToListAsync();
         }

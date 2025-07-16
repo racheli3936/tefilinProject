@@ -14,7 +14,7 @@ namespace core.DTOs
         public int StoreOwnerId { get; set; }
         public int StoreStandId { get; set; }
         public int UserId { get; set; }
-        public DateTime ConversionDate { get; set; }
+        public DateTime ConversationDate { get; set; }
         public StatusCallDto StatusCall { get; set; }
         public string Notes { get; set; }
         public List<ToDoVisitDto> ToDoVisits { get; set; }

@@ -14,7 +14,7 @@ namespace core.Models
         public int StoreOwnerId { get; set; }
         public int StoreStandId {  get; set; }
         public int UserId { get; set; }
-        public DateTime ConversionDate { get; set; }
+        public DateTime ConversationDate { get; set; }
         public StatusCall StatusCall { get; set; }
         public string Notes { get; set; }
         public List<ToDoVisit> ToDoVisits { get; set; }
