@@ -18,7 +18,7 @@ namespace data.Repositories
         }
         public async Task<List<StoreOwner>> GetStoreOwnersAsync()
         {
-            return await _context.StoreOwners.Include(sw=>sw.Stores).ToListAsync();
+            return await _context.StoreOwners.Include(sw=>sw.Stores).ThenInclude(s=>s.City).ToListAsync();
            
         }
         public async Task AddStorOwnerAsync(StoreOwner storeOwner)
