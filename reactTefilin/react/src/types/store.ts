@@ -1,4 +1,3 @@
-import type { City, Region } from "./city&Region"
 import { type StoreStand } from "./storeStand"
 export type Store = {
     id: number,
@@ -6,8 +5,10 @@ export type Store = {
     storeName: string,
     phone: string,
     address: string,
-    city: City,
-    region: Region,
+    longitude:number,
+    latitude:number,
+    cityId: number,
+    regionId: number,
     moreDetails: string,
     standPlace: string,
     status: boolean,

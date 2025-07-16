@@ -6,7 +6,7 @@ const AppLayout=()=>
     return (
         <>
         <Navbar/>
-          <h1>applayout</h1>
+          <div>applayout</div>
           <Outlet/>
         </>
     )

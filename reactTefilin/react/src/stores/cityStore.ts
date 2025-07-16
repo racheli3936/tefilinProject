@@ -20,7 +20,11 @@ class CityStore{
                 }
             }
             )
-            this.cities.push(response.data)
+            this.cities=response.data
+            console.log(response.data,":\nget all cities");
+            console.log(this.cities,":\nget all cities in store");
+            
+            
         }
         catch(e:any)
         {

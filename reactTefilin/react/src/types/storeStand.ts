@@ -6,6 +6,6 @@ export type StoreStand = {
     ActivityEndDate: Date,
     AlonimCount: number,
     Notes: string,
-    ActivityHoursStart: TimeRanges,
-    ActivityHoursEnd: TimeRanges
+    ActivityHoursStart: string,
+    ActivityHoursEnd: string
 }

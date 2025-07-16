@@ -3,8 +3,9 @@ import AppLayout from "./components/appLayout";
 import Login from "./components/login";
 import Home from "./components/home";
 import AuthGuard from "./components/authGuard";
-import StoreOwner from "./components/storeOwner";
+
 import Donors from "./components/donors";
+import StoreOwner from "./components/storeOwner";
 
 const Router = createBrowserRouter([
     {
@@ -23,7 +24,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: 'storeOwner',
-                element: <StoreOwner/>
+                 element: <StoreOwner/>
 
             },
             {

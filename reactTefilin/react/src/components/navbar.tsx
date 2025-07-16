@@ -13,6 +13,7 @@ const Navbar = () => {
   };
 
   return (
+     <div style={{ position: "sticky",  width: "100%", backgroundColor: "#f2f2f2", display: "flex", justifyContent: "center",  zIndex: 1000,   padding: "10px 0"}}>
     <nav style={{ backgroundColor: "#f2f2f2", padding: "10px" }}>
       <Link to="/home" style={{ marginRight: "10px" }}>
         דף הבית
@@ -34,6 +35,7 @@ const Navbar = () => {
         <Link to="/login">התחבר</Link>
       )}
     </nav>
+    </div>
   );
 };
 
