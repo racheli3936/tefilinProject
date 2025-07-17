@@ -18,7 +18,7 @@ namespace data.Repositories
         }
         public async Task<List<Donor>> GetAllDonorsAsync()
         {
-            return await _context.Donors.Include(d=>d.City).Include(d=>d.Region).Include(d=>d.Donations).ToListAsync();
+            return await _context.Donors.Include(d=>d.City).Include(d=>d.Region).ToListAsync();
         }
     }
 }
