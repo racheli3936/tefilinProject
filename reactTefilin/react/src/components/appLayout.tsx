@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "./navbar";
+import Sidebar from "./sidebar";
 
 const AppLayout=()=>
 {
     return (
         <>
-        <Navbar/>
+        <Sidebar/>
           <div>applayout</div>
           <Outlet/>
         </>

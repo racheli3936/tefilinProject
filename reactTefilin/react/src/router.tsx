@@ -40,7 +40,16 @@ const Router = createBrowserRouter([
             },
             {
                 path: 'stores/:id/:name',
-                element: <StoreOwnerStores />
+                element: <StoreOwnerStores storeOwner={{
+                    id: 0,
+                    name: "",
+                    address: "",
+                    phone: "",
+                    email: "",
+                    stores: []
+                }} onClose={function (): void {
+                    throw new Error("Function not implemented.");
+                } } />
             },
             {
                 path: '*',
