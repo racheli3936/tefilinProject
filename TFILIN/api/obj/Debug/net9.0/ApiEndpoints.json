@@ -117,6 +117,16 @@
     ]
   },
   {
+    "ContainingType": "api.Controllers.DonationController",
+    "Method": "GetActiveDonations",
+    "RelativePath": "api/Donation/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "api.Controllers.DonorController",
     "Method": "GetAllDonors",
     "RelativePath": "api/Donor",

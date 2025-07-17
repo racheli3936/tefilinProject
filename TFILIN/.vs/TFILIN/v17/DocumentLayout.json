@@ -3,8 +3,53 @@
   "WorkspaceRootPath": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C6777CE8-DC40-48B3-AC2B-BCE82274C328}|api\\api.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\api\\controllers\\monthlydonationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6777CE8-DC40-48B3-AC2B-BCE82274C328}|api\\api.csproj|solutionrelative:api\\controllers\\monthlydonationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6777CE8-DC40-48B3-AC2B-BCE82274C328}|api\\api.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\api\\controllers\\donationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6777CE8-DC40-48B3-AC2B-BCE82274C328}|api\\api.csproj|solutionrelative:api\\controllers\\donationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\iservices\\idonationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\iservices\\idonationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AAB1D82-9C93-402A-9E05-903BF088D251}|service\\service.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\service\\donationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AAB1D82-9C93-402A-9E05-903BF088D251}|service\\service.csproj|solutionrelative:service\\donationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CEE429-05F9-4BF4-A3A0-13CCBBE2BC7C}|data\\data.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\data\\repositories\\donationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CEE429-05F9-4BF4-A3A0-13CCBBE2BC7C}|data\\data.csproj|solutionrelative:data\\repositories\\donationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CEE429-05F9-4BF4-A3A0-13CCBBE2BC7C}|data\\data.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\data\\repositories\\donorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CEE429-05F9-4BF4-A3A0-13CCBBE2BC7C}|data\\data.csproj|solutionrelative:data\\repositories\\donorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\irepositories\\idonationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\irepositories\\idonationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\dtos\\donationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\dtos\\donationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\models\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\models\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/TefilinDB/True/SqlTable/dbo.Donations.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\dtos\\citydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\dtos\\citydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/TefilinDB/True/SqlTable/dbo.Stands.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/TefilinDB/True/SqlTable/dbo.Items.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\dtos\\dedicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,28 +60,12 @@
       "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\dtos\\donordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\dtos\\donationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\dtos\\donationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\dtos\\dedicationkinddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\dtos\\dedicationkinddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\models\\dedicationkind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\models\\dedicationkind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\models\\dedication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\models\\dedication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\models\\creditstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\models\\creditstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|c:\\users\\9090\\desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\tfilin\\core\\models\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96FA8453-0003-492B-A920-88B5241FF5F6}|core\\core.csproj|solutionrelative:core\\models\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Migrations\\20250716132957_visitIdNullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -125,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -137,7 +166,167 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MonthlyDonationController.cs",
+              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\MonthlyDonationController.cs",
+              "RelativeDocumentMoniker": "api\\Controllers\\MonthlyDonationController.cs",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\MonthlyDonationController.cs",
+              "RelativeToolTip": "api\\Controllers\\MonthlyDonationController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T17:40:54.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDonationService.cs",
+              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\IServices\\IDonationService.cs",
+              "RelativeDocumentMoniker": "core\\IServices\\IDonationService.cs",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\IServices\\IDonationService.cs",
+              "RelativeToolTip": "core\\IServices\\IDonationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T15:14:05.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DonationService.cs",
+              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\service\\DonationService.cs",
+              "RelativeDocumentMoniker": "service\\DonationService.cs",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\service\\DonationService.cs",
+              "RelativeToolTip": "service\\DonationService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T15:17:12.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DonationController.cs",
+              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\DonationController.cs",
+              "RelativeDocumentMoniker": "api\\Controllers\\DonationController.cs",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\DonationController.cs",
+              "RelativeToolTip": "api\\Controllers\\DonationController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T14:58:04.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DonationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Repositories\\DonationRepository.cs",
+              "RelativeDocumentMoniker": "data\\Repositories\\DonationRepository.cs",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Repositories\\DonationRepository.cs",
+              "RelativeToolTip": "data\\Repositories\\DonationRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T15:16:32.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DonorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Repositories\\DonorRepository.cs",
+              "RelativeDocumentMoniker": "data\\Repositories\\DonorRepository.cs",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Repositories\\DonorRepository.cs",
+              "RelativeToolTip": "data\\Repositories\\DonorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T15:19:40.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IDonationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\IRepositories\\IDonationRepository.cs",
+              "RelativeDocumentMoniker": "core\\IRepositories\\IDonationRepository.cs",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\IRepositories\\IDonationRepository.cs",
+              "RelativeToolTip": "core\\IRepositories\\IDonationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T15:13:26.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Donation.cs",
+              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\Donation.cs",
+              "RelativeDocumentMoniker": "core\\Models\\Donation.cs",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\Donation.cs",
+              "RelativeToolTip": "core\\Models\\Donation.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T14:41:39.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DonationDto.cs",
+              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\DonationDto.cs",
+              "RelativeDocumentMoniker": "core\\DTOs\\DonationDto.cs",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\DonationDto.cs",
+              "RelativeToolTip": "core\\DTOs\\DonationDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:38:53.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "dbo.Stands [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/TefilinDB/True/SqlTable/dbo.Stands.sql",
+              "ToolTip": "dbo.Stands [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-07-16T14:40:31.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "dbo.Items [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/TefilinDB/True/SqlTable/dbo.Items.sql",
+              "ToolTip": "dbo.Items [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-07-16T14:39:45.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dbo.Donations [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/TefilinDB/True/SqlTable/dbo.Donations.sql",
+              "ToolTip": "dbo.Donations [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-07-16T14:36:40.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CityDto.cs",
+              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\CityDto.cs",
+              "RelativeDocumentMoniker": "core\\DTOs\\CityDto.cs",
+              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\CityDto.cs",
+              "RelativeToolTip": "core\\DTOs\\CityDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:05:53.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "DedicationDto.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\DedicationDto.cs",
               "RelativeDocumentMoniker": "core\\DTOs\\DedicationDto.cs",
@@ -150,33 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DedicationKindDto.cs",
-              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\DedicationKindDto.cs",
-              "RelativeDocumentMoniker": "core\\DTOs\\DedicationKindDto.cs",
-              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\DedicationKindDto.cs",
-              "RelativeToolTip": "core\\DTOs\\DedicationKindDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T13:52:37.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DedicationKind.cs",
-              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\DedicationKind.cs",
-              "RelativeDocumentMoniker": "core\\Models\\DedicationKind.cs",
-              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\DedicationKind.cs",
-              "RelativeToolTip": "core\\Models\\DedicationKind.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T13:52:18.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Dedication.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\Dedication.cs",
               "RelativeDocumentMoniker": "core\\Models\\Dedication.cs",
@@ -189,20 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CityDto.cs",
-              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\CityDto.cs",
-              "RelativeDocumentMoniker": "core\\DTOs\\CityDto.cs",
-              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\CityDto.cs",
-              "RelativeToolTip": "core\\DTOs\\CityDto.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T10:05:53.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "DonorDto.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\DonorDto.cs",
               "RelativeDocumentMoniker": "core\\DTOs\\DonorDto.cs",
@@ -215,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "CreditStatus.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\CreditStatus.cs",
               "RelativeDocumentMoniker": "core\\Models\\CreditStatus.cs",
@@ -228,33 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DonationDto.cs",
-              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\DonationDto.cs",
-              "RelativeDocumentMoniker": "core\\DTOs\\DonationDto.cs",
-              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\DonationDto.cs",
-              "RelativeToolTip": "core\\DTOs\\DonationDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T13:38:53.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Donation.cs",
-              "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\Donation.cs",
-              "RelativeDocumentMoniker": "core\\Models\\Donation.cs",
-              "ToolTip": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\Donation.cs",
-              "RelativeToolTip": "core\\Models\\Donation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T13:40:25.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "20250716132957_visitIdNullable.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Migrations\\20250716132957_visitIdNullable.cs",
               "RelativeDocumentMoniker": "data\\Migrations\\20250716132957_visitIdNullable.cs",
@@ -267,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "ToDoVisitController.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\ToDoVisitController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\ToDoVisitController.cs",
@@ -280,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "ToDoController.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\ToDoController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\ToDoController.cs",
@@ -293,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "ToDoVisitPostModel.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\PostModels\\ToDoVisitPostModel.cs",
               "RelativeDocumentMoniker": "api\\PostModels\\ToDoVisitPostModel.cs",
@@ -306,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "ToDoVisit.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\ToDoVisit.cs",
               "RelativeDocumentMoniker": "core\\Models\\ToDoVisit.cs",
@@ -319,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "StoreOwnerService.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\service\\StoreOwnerService.cs",
               "RelativeDocumentMoniker": "service\\StoreOwnerService.cs",
@@ -332,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "StoreOwnerConversationRepository.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Repositories\\StoreOwnerConversationRepository.cs",
               "RelativeDocumentMoniker": "data\\Repositories\\StoreOwnerConversationRepository.cs",
@@ -345,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\MappingProfile.cs",
               "RelativeDocumentMoniker": "core\\MappingProfile.cs",
@@ -358,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "StoreOwnerDto.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\StoreOwnerDto.cs",
               "RelativeDocumentMoniker": "core\\DTOs\\StoreOwnerDto.cs",
@@ -371,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "StoreDto.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\StoreDto.cs",
               "RelativeDocumentMoniker": "core\\DTOs\\StoreDto.cs",
@@ -384,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "StoreOwnerRepository.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Repositories\\StoreOwnerRepository.cs",
               "RelativeDocumentMoniker": "data\\Repositories\\StoreOwnerRepository.cs",
@@ -397,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "StoreRepository.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\data\\Repositories\\StoreRepository.cs",
               "RelativeDocumentMoniker": "data\\Repositories\\StoreRepository.cs",
@@ -410,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "StoreOwnerConversation.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\Models\\StoreOwnerConversation.cs",
               "RelativeDocumentMoniker": "core\\Models\\StoreOwnerConversation.cs",
@@ -423,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "StoreOwnerConversationController.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\Controllers\\StoreOwnerConversationController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\StoreOwnerConversationController.cs",
@@ -436,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "StoreOwnerConversationPostModel.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\api\\PostModels\\StoreOwnerConversationPostModel.cs",
               "RelativeDocumentMoniker": "api\\PostModels\\StoreOwnerConversationPostModel.cs",
@@ -449,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "StoreOwnerConversationDto.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\StoreOwnerConversationDto.cs",
               "RelativeDocumentMoniker": "core\\DTOs\\StoreOwnerConversationDto.cs",
@@ -462,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "StatusCallDto.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\StatusCallDto.cs",
               "RelativeDocumentMoniker": "core\\DTOs\\StatusCallDto.cs",
@@ -475,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "StoreOwnerConversationService.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\service\\StoreOwnerConversationService.cs",
               "RelativeDocumentMoniker": "service\\StoreOwnerConversationService.cs",
@@ -488,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "dbo.StoreOwnerConversations [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/TefilinDB/True/SqlTable/dbo.StoreOwnerConversations.sql",
               "ToolTip": "dbo.StoreOwnerConversations [Data]",
@@ -498,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\9090\\Desktop\\\u05EA\u05E4\u05D9\u05DC\u05D9\u05DF\\TFILIN\\core\\DTOs\\UserDto.cs",
               "RelativeDocumentMoniker": "core\\DTOs\\UserDto.cs",

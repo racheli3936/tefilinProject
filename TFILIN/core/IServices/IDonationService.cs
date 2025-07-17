@@ -1,4 +1,6 @@
-﻿using System;
+﻿using core.DTOs;
+using core.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace core.IServices
 {
-    interface IDonationService
+    public interface IDonationService
     {
+        Task<List<DonationDto>> GetActiveDonationsAsync();
     }
 }

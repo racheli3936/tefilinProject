@@ -8,7 +8,6 @@ namespace api.Controllers
     [ApiController]
     public class MonthlyDonationController : ControllerBase
     {
-       
         
     }
 }
