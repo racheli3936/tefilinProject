@@ -1,163 +1,216 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react";
+import { observer } from "mobx-react-lite";
+import { TextField, Select, MenuItem, FormControl, InputLabel, Button, Checkbox, FormControlLabel, Box, Typography } from "@mui/material";
 import StandStore from "../stores/standStore";
+import userStore from "../stores/userStore";
+import statusCallStore from "../stores/statusCallStore";
+import ToDoStore from "../stores/toDoStore";
+import storeOwnerConversationStore from "../stores/storeOwnerConversationStore";
 import type { Stand } from "../types/stand";
 import type { User } from "../types/user";
-import userStore from "../stores/userStore";
-import { observer } from "mobx-react-lite";
 import type { StatusCall } from "../types/statusCall";
-import ToDoStore from "../stores/toDoStore";
-import statusCallStore from "../stores/statusCallStore";
 import type { ToDo } from "../types/todo";
+import type { StoreOwnerConversation } from "../types/storeOwnerConversation";
+import todoVisitStore from "../stores/todoVisitStore";
+import type { ToDoVisit } from "../types/toDoVisit";
 
 const AddStoreOwnerConversation = ({ ownerId }: { ownerId: number }) => {
-    const storeOwnerId = useRef<HTMLInputElement>(null)
+    const conversationDate = useRef<HTMLInputElement>(null);
+    const notes = useRef<HTMLInputElement>(null);
+    const image = useRef<HTMLInputElement>(null);
 
-    const conversationDate = useRef<HTMLInputElement>(null)
-
-    const notes = useRef<HTMLInputElement>(null)
-    const [toDos,setToDos] = useState<ToDo[]>([]);
-    const image = useRef<HTMLInputElement>(null)
+    const [toDos, setToDos] = useState<ToDo[]>([]);
     const [stands, setStands] = useState<Stand[]>([]);
     const [users, setUsers] = useState<User[]>([]);
-    const [statusesCall, setstatusesCall] = useState<StatusCall[]>([]);
+    const [statusesCall, setStatusesCall] = useState<StatusCall[]>([]);
     const [selectedStand, setSelectedStand] = useState('');
     const [selectedUser, setSelectedUser] = useState('');
     const [selectedStatusCall, setSelectedStatusCall] = useState('');
-    const [selectedToDos, setSelectedToDos] = useState<number[]>([]); 
+    const [selectedToDos, setSelectedToDos] = useState<{
+        [toDoId: number]: {
+            source: string;
+            destination: string;
+            description: string;
+        };
+    }>({});
     const [openForm, setOpenForm] = useState(false);
+
     useEffect(() => {
         const fetchStands = async () => {
             const data = await StandStore.getStandsByOwnerId(ownerId);
-            if (data) {
-                setStands(data); // עדכון המצב עם הנתונים שהתקבלו
-            }
+            if (data) setStands(data);
         };
         fetchStands();
     }, [ownerId]);
-    
+
     useEffect(() => {
-        const fetchUsers = async () => {
+        const fetchAll = async () => {
             await userStore.getAllUsers();
-            setUsers(userStore.users); // עדכון ה-state לאחר קריאת המשתמשים
+            await statusCallStore.getAllStatusesCall();
+            await ToDoStore.getAllToDo();
+
+            setUsers(userStore.users);
+            setStatusesCall(statusCallStore.statusesCall);
+            setToDos(ToDoStore.toDos);
         };
-        const fetchStatuses = async () => {
-            await statusCallStore.getAllStatusesCall()
-            setstatusesCall(statusCallStore.statusesCall)
-        }
-        const fetchToDos = async () => {
-        await ToDoStore.getAllToDo();
-        setToDos(ToDoStore.toDos); // עדכון ה-state עם המשימות שהתקבלו
-    };
-        fetchUsers();
-        fetchStatuses();
-        fetchToDos();
+        fetchAll();
     }, []);
-    const handleStandChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setSelectedStand(e.target.value);
-    };
-    const handleUserChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setSelectedUser(e.target.value);
-    };
-    const handleStatusCallChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setSelectedStatusCall(e.target.value);
-    };
+
     const handleToDoChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = parseInt(e.target.value);
-    if (e.target.checked) {
-        setSelectedToDos([...selectedToDos, value]); // הוסף את המשימה למערך
-    } else {
-        setSelectedToDos(selectedToDos.filter(id => id !== value)); // הסר את המשימה מהמערך
-    }
-};
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault()
-        const data = {
-            ownerId: ownerId,
-            standId: selectedStand,
-            userId: selectedUser,
-            statusCallId: selectedStatusCall,
-            conversationDate: conversationDate.current?.value,
+        const id = parseInt(e.target.value);
+        if (e.target.checked) {
+            setSelectedToDos((prev) => ({
+                ...prev,
+                [id]: { source: "", destination: "", description: "" },
+            }));
+        } else {
+            const updated = { ...selectedToDos };
+            delete updated[id];
+            setSelectedToDos(updated);
+        }
+    };
+
+    const handleToDoInputChange = (
+        id: number,
+        field: "source" | "destination" | "description",
+        value: string
+    ) => {
+        setSelectedToDos((prev) => ({
+            ...prev,
+            [id]: {
+                ...prev[id],
+                [field]: value,
+            },
+        }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        const data: Partial<StoreOwnerConversation> = {
+            storeOwnerId: ownerId,
+            storeStandId: Number(selectedStand),
+            userId: Number(selectedUser),
+            statusCallId: Number(selectedStatusCall),
+            conversationDate: conversationDate.current?.value ? new Date(conversationDate.current.value) : undefined,
             notes: notes.current?.value,
             image: image.current?.value,
-            selectedToDos: selectedToDos,
         };
+        try {
 
-        console.log("Data submitted:", data);
-        console.log("handleSubmit called to add store owner conversation");
-    }
+            const newConversation = await storeOwnerConversationStore.addConversation(data);
+            console.log("New conversation:", newConversation);
+
+            const toDoVisitsData:Partial<ToDoVisit>[] = Object.entries(selectedToDos).map(([toDoId, fields]) => ({
+                toDoId: Number(toDoId),
+                storeOwnerConversationId: newConversation.id,
+                description: fields.description,
+                source: fields.source,
+                destination: fields.destination,
+            }));
+            console.log("ToDoVisits++++++++++++++:", toDoVisitsData);
+            console.log("++++++++++++++++++++++++++");
+            try {
+
+                todoVisitStore.addTodoVisitList(toDoVisitsData);
+                console.log("ToDoVisits added successfully");
+
+            }
+            catch (error) {
+                console.error("Error adding ToDoVisits:", error);
+
+
+            }
+        }
+        catch (error) {
+            console.error("Error adding conversation:", error);
+        }
+
+    };
 
     return (
         <>
-            <button onClick={() => setOpenForm(true)}>הוסף שיחה</button>
-            {openForm && (<form onSubmit={handleSubmit}>
-                <label htmlFor="stands">בחר דוכן:</label>
-                <select id="stands" value={selectedStand} onChange={handleStandChange}>
-                    <option value="" disabled>בחר...</option>
-                    {stands && stands.length > 0 ? (
-                        stands.map((stand) => (
-                            <option key={stand?.id} value={stand?.id}>
-                                {stand?.standId}
-                            </option>
-                        ))
-                    ) : (
-                        <option disabled>אין דוכנים זמינים</option>
-                    )}
-                </select>
-                <label htmlFor="stands">המפעיל המתקשר</label>
-                <select id="users" value={selectedUser} onChange={handleUserChange}>
-                    <option value="" disabled>בחר...</option>
-                    {users && users.length > 0 ? (
-                        users.map((user) => (
-                            <option key={user?.id} value={user?.id}>
-                                {user.fullName}-{user?.phone}-{user?.email}
-                            </option>
+            <Button variant="contained" onClick={() => setOpenForm(true)}>הוסף שיחה</Button>
+            {openForm && (
+                <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2, display: 'flex', flexDirection: 'column', gap: 2, maxWidth: 600 }}>
+                    <FormControl fullWidth>
+                        <InputLabel>בחר דוכן</InputLabel>
+                        <Select value={selectedStand} label="בחר דוכן" onChange={(e) => setSelectedStand(e.target.value)}>
+                            {stands.map((stand) => (
+                                <MenuItem key={stand.id} value={stand.id}>{stand.standId}</MenuItem>
+                            ))}
+                        </Select>
+                    </FormControl>
 
-                        ))
-                    ) : (
-                        <option disabled>אין מפעילים זמינים</option>
-                    )}
-                </select>
+                    <FormControl fullWidth>
+                        <InputLabel>המפעיל המתקשר</InputLabel>
+                        <Select value={selectedUser} label="המפעיל" onChange={(e) => setSelectedUser(e.target.value)}>
+                            {users.map((user) => (
+                                <MenuItem key={user.id} value={user.id}>
+                                    {user.fullName} - {user.phone} - {user.email}
+                                </MenuItem>
+                            ))}
+                        </Select>
+                    </FormControl>
 
+                    <FormControl fullWidth>
+                        <InputLabel>סטטוס השיחה</InputLabel>
+                        <Select value={selectedStatusCall} label="סטטוס" onChange={(e) => setSelectedStatusCall(e.target.value)}>
+                            {statusesCall.map((status) => (
+                                <MenuItem key={status.id} value={status.id}>
+                                    {status.statusName}
+                                </MenuItem>
+                            ))}
+                        </Select>
+                    </FormControl>
 
-                <label htmlFor="stands">סטטוס השיחה </label>
-                <select id="statuses" value={selectedStatusCall} onChange={handleStatusCallChange}>
-                    <option value="" disabled>בחר...</option>
-                    {statusesCall && statusesCall.length > 0 ? (
-                        statusesCall.map((status) => (
-                            <option key={status?.id} value={status?.id}>
-                                {status.statusName}
-                            </option>
-                        ))
-                    ) : (
-                        <option disabled>אין סטטוסים זמינים</option>
-                    )}
-                </select>
-                <input type="date" placeholder="תאריך השיחה" ref={conversationDate} />
-                <input type="text" placeholder=" הערות נוספות" ref={notes} />
-                <input type="text" placeholder="תמונה " ref={image} />
+                    <TextField inputRef={conversationDate} type="date" label="תאריך שיחה" InputLabelProps={{ shrink: true }} />
+                    <TextField inputRef={notes} label="הערות" fullWidth />
+                    <TextField inputRef={image} label="תמונה" fullWidth />
 
-                <label>בחר משימות:</label>
-                <div>
-                    {toDos && toDos.length > 0 ? (
-                        toDos.map((toDo) => (
-                            <div key={toDo.id}>
-                                <input
-                                    type="checkbox"
-                                    value={toDo.id}
-                                    onChange={handleToDoChange}
+                    <Typography variant="h6">משימות</Typography>
+                    {toDos.map((toDo) => (
+                        <Box key={toDo.id} sx={{ border: '1px solid #ccc', borderRadius: 1, p: 2, mb: 1 }}>
+                            <FormControlLabel
+                                control={
+                                    <Checkbox
+                                        value={toDo.id}
+                                        checked={selectedToDos.hasOwnProperty(toDo.id)}
+                                        onChange={handleToDoChange}
+                                    />
+                                }
+                                label={toDo.toDoName}
+                            />
+                            <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
+                                <TextField
+                                    label="מקור"
+                                    value={selectedToDos[toDo.id]?.source || ""}
+                                    onChange={(e) => handleToDoInputChange(toDo.id, "source", e.target.value)}
+                                    disabled={!selectedToDos[toDo.id]}
+                                    fullWidth
                                 />
-                                {toDo.toDoName} {/* הנח ש-`taskName` הוא השם של המשימה */}
-                            </div>
-                        ))
-                    ) : (
-                        <p>אין משימות זמינות</p>
-                    )}
-                </div>
+                                <TextField
+                                    label="יעד"
+                                    value={selectedToDos[toDo.id]?.destination || ""}
+                                    onChange={(e) => handleToDoInputChange(toDo.id, "destination", e.target.value)}
+                                    disabled={!selectedToDos[toDo.id]}
+                                    fullWidth
+                                />
+                                <TextField
+                                    label="תיאור"
+                                    value={selectedToDos[toDo.id]?.description || ""}
+                                    onChange={(e) => handleToDoInputChange(toDo.id, "description", e.target.value)}
+                                    disabled={!selectedToDos[toDo.id]}
+                                    fullWidth
+                                />
+                            </Box>
+                        </Box>
+                    ))}
 
-                <button type="submit">שלח</button> {/* כפתור לשליחת הטופס */}
-            </form>)}
-
+                    <Button type="submit" variant="contained" color="primary">שלח</Button>
+                </Box>
+            )}
         </>
-    )
-}
+    );
+};
+
 export default observer(AddStoreOwnerConversation);

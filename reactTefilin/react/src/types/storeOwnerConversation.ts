@@ -6,8 +6,9 @@ export type StoreOwnerConversation={
   storeOwnerId :number,
   storeStandId: number;
   userId: number;
-  conversionDate: Date;
-  statusCall: StatusCall;
+  conversationDate: Date;
+  statusCallId: number;
+  statusCall: StatusCall; // Optional, if you want to include the status call details
   notes: string;
   toDoVisits: ToDoVisit[];
   image: string;

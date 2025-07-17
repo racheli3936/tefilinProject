@@ -81,6 +81,7 @@ class StoreOwnerConversationsStore {
             console.log("Conversation added successfully:", response.data);
             
             this.conversations.push(response.data);
+            return response.data;
             
         } catch (error) {
             console.error("Error adding conversation:", error);

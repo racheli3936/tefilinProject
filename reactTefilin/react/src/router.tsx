@@ -6,6 +6,8 @@ import AuthGuard from "./components/authGuard";
 
 import Donors from "./components/donors";
 import StoreOwner from "./components/storeOwner";
+import StoreOwnerConversations from "./components/storeOwnerConversations";
+import StoreOwnerStores from "./components/storeOwneStores";
 
 const Router = createBrowserRouter([
     {
@@ -31,6 +33,14 @@ const Router = createBrowserRouter([
                 path:'donors',
                 element: <Donors/>
 
+            },
+            {
+                path:'storeOwnerConversations/:id',
+                element:<StoreOwnerConversations/>
+            },
+            {
+                path: 'stores/:id/:name',
+                element: <StoreOwnerStores />
             },
             {
                 path: '*',

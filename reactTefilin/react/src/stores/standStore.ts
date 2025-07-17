@@ -14,8 +14,8 @@ class StandStore {
                     'Authorization': `Bearer ${this.token}`
                 }
             })
-            console.log(response.data, ": response data conversations by storeOwnerId");
-            console.log(typeof response.data, ": type of response data conversations by storeOwnerId");
+            console.log(response.data, ": response data stands by storeOwnerId");
+            console.log(typeof response.data, ": type of response data stands by storeOwnerId");
             return response.data
         }
         catch (error: any) {
