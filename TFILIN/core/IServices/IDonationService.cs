@@ -11,5 +11,7 @@ namespace core.IServices
     public interface IDonationService
     {
         Task<List<DonationDto>> GetActiveDonationsAsync();
+
+        Task<List<DonationDto>> GetDonationsByUserAsync(int userId);
     }
 }

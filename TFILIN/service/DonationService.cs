@@ -28,5 +28,12 @@ namespace service
             List<DonationDto> donationDtos = _mapper.Map<List<DonationDto>>(donations);
             return donationDtos;
         }
+
+        public async Task<List<DonationDto>> GetDonationsByUserAsync(int userId)
+        {
+            var donation= await _donationRepository.GetDonationsByDonorIdAsync(userId);
+            var donationDto=_mapper.Map<List<DonationDto>>(donation);
+            return donationDto;
+        }
     }
 }

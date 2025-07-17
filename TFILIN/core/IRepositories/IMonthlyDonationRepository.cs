@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace core.IRepositories
 {
-    public interface IDonationRepository
+    public interface IMonthlyDonationRepository
     {
-        Task<List<Donation>> GetActiveDonationsAsync();
-        Task<List<Donation>> GetDonationsByDonorIdAsync(int donorId);
+        Task<List<MonthlyDonation>> GetMonthlyDonationsByDonationIdAsync(int donationId);
     }
+
 }
+

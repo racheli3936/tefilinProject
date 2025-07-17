@@ -22,8 +22,18 @@ namespace data.Repositories
         public async Task<List<Donation>> GetActiveDonationsAsync()
         {
             var today = DateOnly.FromDateTime(DateTime.Today);
-            return await _context.Donations
+            return await _context.Donations.Include(d=>d.MonthlyDonations).Include(d=>d.Dedications)
                 .Where(d => d.EndDonation > today)
+                .ToListAsync();
+        }
+        public async Task<List<Donation>> GetDonationsByDonorIdAsync(int donorId)
+        {
+            return await _context.Donations
+                .Include(d => d.MonthlyDonations)
+                .Include(d => d.Dedications)
+                .Include(d => d.PhonesWithDonors)
+                .Include(d => d.Destination)
+                .Where(d => d.DonorId == donorId)
                 .ToListAsync();
         }
     }

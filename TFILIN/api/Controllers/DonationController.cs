@@ -21,5 +21,15 @@ namespace api.Controllers
             List<DonationDto> activeDonations = await _donationService.GetActiveDonationsAsync();
             return Ok(activeDonations);
         }
+        [HttpGet("by-user/{userId}")]
+        public async Task<IActionResult> GetDonationsByUser(int userId)
+        {
+            List<DonationDto> donations = await _donationService.GetDonationsByUserAsync(userId);
+            if (donations == null || !donations.Any())
+            {
+                return NotFound($"לא נמצאו תרומות למשתמש עם מזהה {userId}");
+            }
+            return Ok(donations);
+        }
     }
 }

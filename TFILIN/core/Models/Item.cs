@@ -12,7 +12,7 @@ namespace core.Models
         [Key]
         public int Id { get; set; }
         public string Kind {  get; set; }
-      public  List<StandItem> StandItems { get; set; } = new List<StandItem>();
+      //public  List<StandItem> StandItems { get; set; } = new List<StandItem>();
         //___________________________________
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }

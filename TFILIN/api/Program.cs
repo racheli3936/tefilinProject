@@ -92,6 +92,13 @@ builder.Services.AddScoped<ITefilinStatusRepository, TefilinStatusRepository>();
 builder.Services.AddScoped<IToDoService, ToDoService>();
 builder.Services.AddScoped<IToDoRepository,ToDoRepository>();
 
+builder.Services.AddScoped<IDonationService, DonationService>();
+builder.Services.AddScoped<IDonationRepository, DonationRepository>();
+
+builder.Services.AddScoped<IMonthlyDonationService, MonthlyDonationService>();
+builder.Services.AddScoped<IMonthlyDonationRepository, MonthlyDonationRepository>();
+
+
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddAuthentication(options =>
 {

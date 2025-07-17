@@ -25,6 +25,8 @@ namespace core
             CreateMap<StoreOwnerConversation, StoreOwnerConversationDto>().ReverseMap();
             CreateMap<ToDoVisit, ToDoVisitDto>().ReverseMap();
             CreateMap<ToDo, ToDoDto>().ReverseMap();
+            CreateMap<MonthlyDonation, MonthlyDonationDto>().ReverseMap();
+            CreateMap<Donation, DonationDto>().ReverseMap();
 
         }
     }
