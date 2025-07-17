@@ -16,7 +16,7 @@ namespace core.DTOs
         public string StoreName { get; set; }
         public string Phone { get; set; }
         public string Address { get; set; }
-        public City City { get; set; }
+        public CityDto City { get; set; }
         public Region Region { get; set; }
         public double Latitude { get; set; }//קו רוחב
         public double Longitude { get; set; }//קו אורך

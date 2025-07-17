@@ -703,6 +703,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "api.Controllers.ToDoVisitController",
+    "Method": "CreateFromList",
+    "RelativePath": "api/ToDoVisit/list",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "models",
+        "Type": "System.Collections.Generic.List\u00601[[api.PostModels.ToDoVisitPostModel, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "api.Controllers.UserController",
     "Method": "GetAllUsers",
     "RelativePath": "api/User",

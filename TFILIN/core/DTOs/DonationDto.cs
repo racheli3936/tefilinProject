@@ -18,7 +18,7 @@ namespace core.DTOs
         public bool Status { get; set; }
         public Item Destination { get; set; }
        // public List<MonthlyDonation> MonthlyDonations { get; set; } = new List<MonthlyDonation>();
-        public List<Dedication> Dedications { get; set; } = new List<Dedication>();
+        public List<DedicationDto> Dedications { get; set; } = new List<DedicationDto>();
         ///public List<DonorsConversation> PhonesWithDonors { get; set; } = new List<DonorsConversation>();
     }
 }

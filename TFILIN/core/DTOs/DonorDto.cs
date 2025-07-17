@@ -16,6 +16,6 @@ namespace core.DTOs
         public CityDto City { get; set; }
         public RegionDto Region { get; set; }
         public string Email { get; set; }
-        public List<Donation> Donations { get; set; } = new List<Donation>();
+        public List<DonationDto> Donations { get; set; } = new List<DonationDto>();
     }
 }

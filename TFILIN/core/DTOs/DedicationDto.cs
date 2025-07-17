@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace core.DTOs
 {
-    public class StoreOwnerDto
+    public class DedicationDto
     {
         public int Id { get; set; }
+        public int DonationId { get; set; }
         public string Name { get; set; }
-        public string Address { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
-        public List<StoreDto> Stores { get; set; }
+        public EGender Gender { get; set; }
+        public string ParentName { get; set; }
+        public DedicationKindDto DedicationKind { get; set; }
     }
 }
